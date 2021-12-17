@@ -1,0 +1,9 @@
+#!/usr/bin/php
+<?php
+
+use Sterzik\ChristmassTree\TreeController;
+
+require_once(dirname(__DIR__)."/vendor/autoload.php");
+
+$treeController = new TreeController("https://marvin.milimetr.org/christmass-tree/proxy.php");
+$treeController->run(STDOUT);

@@ -1,0 +1,18 @@
+{
+    "name": "sterzik/christmass-tree",
+    "description": "Christmass tree",
+    "authors": [
+        {
+            "name": "Marek Sterzik",
+            "email": "marek@milimetr.org"
+        }
+    ],
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Sterzik\\ChristmassTree\\": "src/",
+            "Sterzik\\ChristmassTreeClient\\": "client/"
+        }
+    }
+}

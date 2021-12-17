@@ -1,0 +1,10 @@
+#!/usr/bin/php
+<?php
+
+use Sterzik\ChristmassTreeClient\ChristmassTreeClient;
+
+require_once(dirname(__DIR__)."/vendor/autoload.php");
+
+$client = new ChristmassTreeClient();
+
+$client->putStar(1)->putGift("Marek", 4);
