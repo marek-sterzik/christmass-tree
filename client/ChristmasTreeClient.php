@@ -1,10 +1,10 @@
 <?php
 
-namespace Sterzik\ChristmassTreeClient;
+namespace Sterzik\ChristmasTreeClient;
 
-class ChristmassTreeClient
+class ChristmasTreeClient
 {
-    const TREE_CONTROL_URL = "https://marvin.milimetr.org/christmass-tree/proxy.php";
+    const TREE_CONTROL_URL = "https://marvin.milimetr.org/christmas-tree/proxy.php";
 
     private $proxyUrl;
 

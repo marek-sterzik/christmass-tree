@@ -1,6 +1,6 @@
 {
-    "name": "sterzik/christmass-tree",
-    "description": "Christmass tree",
+    "name": "sterzik/christmas-tree",
+    "description": "Christmas tree",
     "authors": [
         {
             "name": "Marek Sterzik",
@@ -11,8 +11,8 @@
     "license": "GPL-2.0-or-later",
     "autoload": {
         "psr-4": {
-            "Sterzik\\ChristmassTree\\": "src/",
-            "Sterzik\\ChristmassTreeClient\\": "client/"
+            "Sterzik\\ChristmasTree\\": "src/",
+            "Sterzik\\ChristmasTreeClient\\": "client/"
         }
     }
 }

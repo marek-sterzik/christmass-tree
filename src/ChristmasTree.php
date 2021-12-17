@@ -1,8 +1,8 @@
 <?php
 
-namespace Sterzik\ChristmassTree;
+namespace Sterzik\ChristmasTree;
 
-class ChristmassTree
+class ChristmasTree
 {
     private $canvas;
 
@@ -18,7 +18,7 @@ class ChristmassTree
     public function __construct()
     {
         $this->canvas = new AACanvas(60, 37);
-        $this->drawer = new ChristmassTreeDrawer($this->canvas);
+        $this->drawer = new ChristmasTreeDrawer($this->canvas);
 
         $this->chains = $this->initializeObjectList($this->drawer->getNumberOfChains(), false);
         $this->glassBalls = $this->initializeObjectList($this->drawer->getNumberOfGlassBalls(), false);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sterzik\ChristmassTree;
+namespace Sterzik\ChristmasTree;
 
 class AACanvas
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sterzik\ChristmassTree;
+namespace Sterzik\ChristmasTree;
 
 class TreeController
 {
@@ -11,8 +11,8 @@ class TreeController
 
     public function __construct(string $proxyUrl)
     {
-        $this->tree = new ChristmassTree();
-        $this->treeProxy = new ChristmassTreeProxy($this->tree);
+        $this->tree = new ChristmasTree();
+        $this->treeProxy = new ChristmasTreeProxy($this->tree);
         $this->proxyUrl = $this->getFullProxyUrl($proxyUrl);
     }
 

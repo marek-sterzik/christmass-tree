@@ -1,11 +1,11 @@
 #!/usr/bin/php
 <?php
 
-use Sterzik\ChristmassTreeClient\ChristmassTreeClient;
+use Sterzik\ChristmasTreeClient\ChristmasTreeClient;
 
 require_once(dirname(__DIR__)."/vendor/autoload.php");
 
-$client = new ChristmassTreeClient();
+$client = new ChristmasTreeClient();
 
 $argv0 = array_shift($argv);
 

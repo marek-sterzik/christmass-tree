@@ -1,8 +1,8 @@
 <?php
 
-namespace Sterzik\ChristmassTree;
+namespace Sterzik\ChristmasTree;
 
-class ChristmassTreeDrawer
+class ChristmasTreeDrawer
 {
     const GLASSBALL_COORDINATES = [[11, 21], [11, 15], [16, 9], [18, 4], [18, 20], [21, 6], [23, 11], [27, 19]];
     const SWEETS_COORDINATES = [[7, 22], [9, 19], [14, 10], [15, 7], [22, 12], [16, 14], [23, 17], [28, 22]];

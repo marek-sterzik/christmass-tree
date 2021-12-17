@@ -1,8 +1,8 @@
 <?php
 
-namespace Sterzik\ChristmassTree;
+namespace Sterzik\ChristmasTree;
 
-class ChristmassTreeProxy
+class ChristmasTreeProxy
 {
     private $proxy;
 
