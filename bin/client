@@ -1,0 +1,48 @@
+#!/usr/bin/php
+<?php
+
+use Sterzik\ChristmassTreeClient\ChristmassTreeClient;
+
+require_once(dirname(__DIR__)."/vendor/autoload.php");
+
+$client = new ChristmassTreeClient();
+
+$argv0 = array_shift($argv);
+
+if (!empty($argv)) {
+    $method = array_shift($argv);
+    $rc = new ReflectionClass($client);
+
+    $rm = $rc->hasMethod($method) ? $rc->getMethod($method) : null;
+
+    if ($rm !== null) {
+        $args = [];
+        foreach ($rm->getParameters() as $param) {
+            if (!empty($argv)) {
+                $arg = array_shift($argv);
+                $type = $param->getType();
+                if ($type) {
+                    if ("$type" === "int") {
+                        if ($type->allowsNull() && $arg === 'null') {
+                            $arg = null;
+                        } else {
+                            if (preg_match('/^-?[0-9]+$/', $arg)) {
+                                $arg = (int)$arg;
+                            } else {
+                                fprintf(STDERR, "Error: invalid argument\n");
+                                exit;
+                            }
+                        }
+                    }
+                }
+                $args[] = $arg;
+            }
+        }
+        $rm->invoke($client, ...$args);
+    } else {
+        fprintf(STDERR, "Error: method does not exist: $method\n");
+    }
+} else {
+    fprintf(STDERR, "usage: $argv0 method [...arguments]\n");
+}
+

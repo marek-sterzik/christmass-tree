@@ -250,15 +250,6 @@ class ChristmassTree
         $this->drawLamps();
         $this->drawStar();
         $this->drawGifts();
-
-        /*
-        $this->drawGift("Mamiňule", 0);
-        $this->drawGift("Táta", 1);
-        $this->drawGift("Jiřík", 2);
-        $this->drawGift("Markétka", 3);
-        $this->drawGift("Kristýnka", 4);
-        $this->drawGift("Opa", 5);
-        */
     }
 
     private function drawGifts()
@@ -275,7 +266,7 @@ class ChristmassTree
     {
         $this->canvas->setColor(2);
         $this->drawer->drawTree();
-        $this->canvas->setColor(9);
+        $this->canvas->setColor(3);
         $this->drawer->drawRoot();
         $this->canvas->setColor(null);
     }
